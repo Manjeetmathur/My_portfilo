@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -20,12 +20,11 @@ body {
 }
 
 .container {
-    
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   position: relative;
-  z-index: 1; /* Ensure content is above particles */
+  z-index: 1;
 }
 
 header {
@@ -67,7 +66,6 @@ section {
   background: rgba(10, 10, 35, 0.8);
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 247, 255, 0.2);
-  animation: slideIn 1s ease-out;
 }
 
 section h2 {
@@ -83,100 +81,20 @@ section h2 {
   line-height: 1.6;
   text-align: center;
   padding: 0 20px;
-}
-
-.resume-container {
-  text-align: center;
-}
-
-.resume-btn {
-  display: inline-block;
-  background: #00f7ff;
-  color: #0a0a23;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-decoration: none;
-  text-align: center;
-}
-.links {
-  text-decoration: none;
   color: #b0c4de;
 }
 
-/* Remove modal-related styles */
-.modal,
-.modal-content,
-.close,
-.resume-pdf {
-  display: none;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  animation: fadeIn 0.5s ease-in;
-}
-
-.modal-content {
-  margin: 5% auto;
-  padding: 20px;
-  width: 80%;
-  max-width: 800px;
-  background: #1a1a3d;
-  border-radius: 10px;
-  position: relative;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 2em;
-  color: #00f7ff;
-  cursor: pointer;
-}
-
-.close:hover {
-  color: #b0c4de;
-}
-
-.resume-pdf {
-  width: 100%;
-  height: 80vh;
-  border: none;
-}
-.projects-grid,
-.contact-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 0 20px;
-}
-@media (min-width: 768px) {
-  .projects-grid,
-  .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    gap: 20px;
-    padding: 0 20px;
-  }
-}
-.internships-grid,
-.certificates-grid {
+.skills-grid, .projects-grid, .internships-grid, .contact-grid, .education-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .projects-grid, .contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .card {
@@ -184,7 +102,6 @@ section h2 {
   padding: 20px;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeInUp 1s ease-out;
   height: 100%;
 }
 
@@ -198,8 +115,7 @@ section h2 {
   margin-bottom: 10px;
 }
 
-.card p,
-.card a {
+.card p, .card a {
   color: #b0c4de;
   text-decoration: none;
 }
@@ -217,6 +133,56 @@ section h2 {
   margin-bottom: 10px;
 }
 
+.resume-container, .mail-container {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.resume-btn, .whatsapp-btn {
+  display: inline-block;
+  background: #00f7ff;
+  color: #0a0a23;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-btn:hover, .whatsapp-btn:hover, .mail-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.6);
+}
+
+.whatsapp-btn {
+  background: #25d366;
+  color: #ffffff;
+}
+
+.whatsapp-btn:hover {
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.6);
+}
+
+.mail-container p {
+  font-size: 1.2em;
+  color: #b0c4de;
+  margin-bottom: 20px;
+}
+
+.mail-link {
+  color: #00f7ff;
+}
+
+.mail-link:hover {
+  /* color: #b0c4de; */
+  text-decoration: underline;
+}
+
+.links {
+  text-decoration: none;
+  color: #b0c4de;
+}
+
 footer {
   text-align: center;
   padding: 20px;
@@ -228,49 +194,27 @@ footer p {
   color: #b0c4de;
 }
 
-/* Animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
 }
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2.5em;
@@ -289,81 +233,16 @@ footer p {
     font-size: 2em;
   }
 
-  /* .resume-pdf {
-        height: 400px;
-    } */
-}
-
-/* Add styles for Skills section */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 0 20px;
-}
-
-/* Remove Contact Me and WhatsApp container styles */
-.contact-me,
-.whatsapp-container {
-  display: none;
-}
-
-/* Add styles for Mail section */
-.mail {
-  padding: 60px 0;
-  margin-bottom: 40px;
-  background: rgba(10, 10, 35, 0.8);
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 247, 255, 0.2);
-  animation: slideIn 1s ease-out;
-}
-
-.mail-container {
-  text-align: center;
-  padding: 0 20px;
-}
-
-.mail-container p {
-  font-size: 1.2em;
-  color: #b0c4de;
-  margin-bottom: 20px;
-}
-
-.mail-link {
-  color: #00f7ff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.mail-link:hover {
-  color: #b0c4de;
-  text-decoration: underline;
-}
-
-.whatsapp-btn {
-  display: inline-block;
-  background: #25d366;
-  color: #ffffff;
-  padding: 15px 30px;
-  border-radius: 5px;
-  font-size: 1.2em;
-  text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.whatsapp-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(37, 211, 102, 0.6);
-}
-
-/* Update responsive design for Mail section */
-@media (max-width: 768px) {
   .mail-container p {
     font-size: 1em;
   }
 
-  .whatsapp-btn {
+  .resume-btn, .whatsapp-btn {
     font-size: 1em;
     padding: 12px 25px;
   }
+}
+
+.contact-me, .whatsapp-container {
+  display: none;
 }

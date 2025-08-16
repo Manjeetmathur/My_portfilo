@@ -50,7 +50,6 @@ particlesJS("particles-js", {
   retina_detect: true,
 });
 
-// Intersection Observer for animations
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section");
   const observer = new IntersectionObserver(
@@ -59,9 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (entry.isIntersecting) {
           entry.target.style.animation = "slideIn 1s ease-out forwards";
           entry.target.querySelectorAll(".card").forEach((card, index) => {
-            card.style.animation = `fadeInUp 1s ease-out ${
-              index * 0.2
-            }s forwards`;
+            card.style.animation = `fadeInUp 1s ease-out ${index * 0.2}s forwards`;
           });
         }
       });
@@ -70,65 +67,4 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   sections.forEach((section) => observer.observe(section));
-  // Update Intersection Observer to include new sections
-  document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.style.animation = "slideIn 1s ease-out forwards";
-            entry.target.querySelectorAll(".card").forEach((card, index) => {
-              card.style.animation = `fadeInUp 1s ease-out ${
-                index * 0.2
-              }s forwards`;
-            });
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-  });
-
-  // Update Intersection Observer to include Mail section
-  document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.style.animation = "slideIn 1s ease-out forwards";
-            entry.target.querySelectorAll(".card").forEach((card, index) => {
-              card.style.animation = `fadeInUp 1s ease-out ${
-                index * 0.2
-              }s forwards`;
-            });
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-  });
-  // Resume modal functionality
-  // const modal = document.getElementById("resume-modal");
-  // const btn = document.getElementById("view-resume-btn");
-  // const span = document.getElementById("close-modal");
-
-  // btn.onclick = function () {
-  //     modal.style.display = "block";
-  // };
-
-  // span.onclick = function () {
-  //     modal.style.display = "none";
-  // };
-
-  // window.onclick = function (event) {
-  //     if (event.target == modal) {
-  //         modal.style.display = "none";
-  //     }
-  // };
 });
