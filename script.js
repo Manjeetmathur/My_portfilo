@@ -58,7 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (entry.isIntersecting) {
           entry.target.style.animation = "slideIn 1s ease-out forwards";
           entry.target.querySelectorAll(".card").forEach((card, index) => {
-            card.style.animation = `fadeInUp 1s ease-out ${index * 0.2}s forwards`;
+            card.style.animation = `fadeInUp 1s ease-out ${
+              index * 0.2
+            }s forwards`;
           });
         }
       });
@@ -68,3 +70,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sections.forEach((section) => observer.observe(section));
 });
+
+function openModal(title, description) {
+  const modal = document.getElementById("projectModal");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalDescription = document.getElementById("modalDescription");
+
+  modalTitle.innerHTML = `<i class="fas fa-code" style="margin-right: 8px;"></i>${title}`;
+  modalDescription.textContent = description;
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  const modal = document.getElementById("projectModal");
+  modal.style.display = "none";
+}
+
+// Close modal when clicking outside the modal content
+window.onclick = function (event) {
+  const modal = document.getElementById("projectModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};

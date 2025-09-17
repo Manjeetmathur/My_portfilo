@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body style="background: #0a0a23; color: #ffffff; overflow-x: hidden">
     <div
@@ -112,66 +116,116 @@
       </section>
 
       <section
-        class="education"
         style="
-          padding: 60px 0;
+          padding: 60px 20px;
           margin-bottom: 40px;
-          background: rgba(10, 10, 35, 0.8);
+          background: rgba(10, 10, 35, 0.9);
           border-radius: 15px;
-          box-shadow: 0 0 20px rgba(0, 247, 255, 0.2);
+          box-shadow: 0 0 25px rgba(0, 247, 255, 0.3);
+          max-width: 1200px;
+          margin-left: auto;
+          margin-right: auto;
         "
       >
         <h2
           style="
-            font-size: 2.5em;
+            font-size: 2.8rem;
             color: #00f7ff;
             text-align: center;
-            margin-bottom: 30px;
-            text-shadow: 0 0 5px #00f7ff;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px #00f7ff, 0 0 20px rgba(0, 247, 255, 0.6);
+            letter-spacing: 2px;
           "
         >
-          Education
+          <i class="fas fa-graduation-cap" style="margin-right: 10px"></i
+          >Education
         </h2>
+
         <div
-          class="education-grid"
           style="
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 0 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 0 10px;
           "
         >
           <div
-            class="card"
             style="
-              background: #1a1a3d;
-              padding: 20px;
-              border-radius: 10px;
+              background: linear-gradient(145deg, #1a1a3d, #101027);
+              padding: 15px;
+              border-radius: 15px;
+              box-shadow: 0 4px 15px rgba(0, 247, 255, 0.2);
               transition: transform 0.3s ease, box-shadow 0.3s ease;
               height: 100%;
             "
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 25px rgba(0, 247, 255, 0.5)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 247, 255, 0.2)'"
           >
-            <h3 style="color: #00f7ff; margin-bottom: 10px">
+            <h3
+              style="
+                color: #00f7ff;
+                margin-bottom: 12px;
+                font-size: 1.3rem;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <i class="fas fa-graduation-cap" style="margin-right: 8px"></i>
               BCA - Sarala Birla University
             </h3>
-            <p style="color: #b0c4de">2023 - 2026</p>
-            <p style="color: #b0c4de">CGPA: 9.5</p>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <p style="color: #b0c4de; margin-bottom: 6px; font-size: 1rem">
+                2023 - 2026
+              </p>
+              <p style="color: #b0c4de; font-size: 1rem">CGPA: 9.5</p>
+            </div>
           </div>
+
           <div
-            class="card"
             style="
-              background: #1a1a3d;
-              padding: 20px;
-              border-radius: 10px;
+              background: linear-gradient(145deg, #1a1a3d, #101027);
+              padding: 15px;
+              border-radius: 15px;
+              box-shadow: 0 4px 15px rgba(0, 247, 255, 0.2);
               transition: transform 0.3s ease, box-shadow 0.3s ease;
               height: 100%;
             "
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 25px rgba(0, 247, 255, 0.5)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 247, 255, 0.2)'"
           >
-            <h3 style="color: #00f7ff; margin-bottom: 10px">
+            <h3
+              style="
+                color: #00f7ff;
+                margin-bottom: 12px;
+                font-size: 1.3rem;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+              "
+            >
+              <i class="fas fa-school" style="margin-right: 8px"></i>
               Class 12 - High School Tisri Barahmasiya
             </h3>
-            <p style="color: #b0c4de">Science Stream</p>
-            <p style="color: #b0c4de">Marks: 81%</p>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <p style="color: #b0c4de; margin-bottom: 6px; font-size: 1rem">
+                2022-2023
+              </p>
+              <p style="color: #b0c4de; font-size: 1rem">Marks: 81%</p>
+            </div>
           </div>
         </div>
       </section>
@@ -195,7 +249,7 @@
             text-shadow: 0 0 5px #00f7ff;
           "
         >
-          Internships
+          <i class="fas fa-briefcase" style="margin-right: 10px"></i>Internships
         </h2>
         <div
           class="internships-grid"
@@ -216,7 +270,15 @@
               height: 100%;
             "
           >
-            <h3 style="color: #00f7ff; margin-bottom: 10px">
+            <h3
+              style="
+                color: #00f7ff;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+              "
+            >
+              <i class="fas fa-briefcase" style="margin-right: 8px"></i>
               Codestam Technology
             </h3>
             <p style="color: #b0c4de">
@@ -226,290 +288,352 @@
           </div>
         </div>
       </section>
-
       <section
-        class="skills"
         style="
-          padding: 60px 0;
+          padding: 60px 20px;
           margin-bottom: 40px;
-          background: rgba(10, 10, 35, 0.8);
+          background: rgba(10, 10, 35, 0.9);
           border-radius: 15px;
-          box-shadow: 0 0 20px rgba(0, 247, 255, 0.2);
+          box-shadow: 0 0 25px rgba(0, 247, 255, 0.3);
+          max-width: 1200px;
+          margin-left: auto;
+          margin-right: auto;
         "
       >
         <h2
           style="
-            font-size: 2.5em;
+            font-size: 2.8rem;
             color: #00f7ff;
             text-align: center;
-            margin-bottom: 30px;
-            text-shadow: 0 0 5px #00f7ff;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px #00f7ff, 0 0 20px rgba(0, 247, 255, 0.6);
+            letter-spacing: 2px;
           "
         >
           Skills
         </h2>
+
         <div
-          class="skills-grid"
           style="
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 0 20px;
+            gap: 25px;
+            padding: 0 10px;
           "
         >
           <div
-            class="card"
             style="
-              background: #1a1a3d;
-              padding: 20px;
-              border-radius: 10px;
+              background: linear-gradient(145deg, #1a1a3d, #101027);
+              padding: 25px;
+              border-radius: 15px;
+              box-shadow: 0 4px 15px rgba(0, 247, 255, 0.2);
               transition: transform 0.3s ease, box-shadow 0.3s ease;
               height: 100%;
             "
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 25px rgba(0, 247, 255, 0.5)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 247, 255, 0.2)'"
           >
-            <h3 style="color: #00f7ff; margin-bottom: 10px">JavaScript</h3>
-            <p style="color: #b0c4de">
+            <h3 style="color: #00f7ff; margin-bottom: 10px; font-size: 1.3rem">
+              JavaScript
+            </h3>
+            <p style="color: #b0c4de; line-height: 1.6">
               Proficient in React, Next.js, Node.js, Express.js for building
               dynamic applications.
             </p>
           </div>
+
           <div
-            class="card"
             style="
-              background: #1a1a3d;
-              padding: 20px;
-              border-radius: 10px;
+              background: linear-gradient(145deg, #1a1a3d, #101027);
+              padding: 25px;
+              border-radius: 15px;
+              box-shadow: 0 4px 15px rgba(0, 247, 255, 0.2);
               transition: transform 0.3s ease, box-shadow 0.3s ease;
               height: 100%;
             "
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 25px rgba(0, 247, 255, 0.5)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 247, 255, 0.2)'"
           >
-            <h3 style="color: #00f7ff; margin-bottom: 10px">HTML & CSS</h3>
-            <p style="color: #b0c4de">
+            <h3 style="color: #00f7ff; margin-bottom: 10px; font-size: 1.3rem">
+              HTML & CSS
+            </h3>
+            <p style="color: #b0c4de; line-height: 1.6">
               Expert in responsive design, animations, and modern CSS
               frameworks.
             </p>
           </div>
+
           <div
-            class="card"
             style="
-              background: #1a1a3d;
-              padding: 20px;
-              border-radius: 10px;
+              background: linear-gradient(145deg, #1a1a3d, #101027);
+              padding: 25px;
+              border-radius: 15px;
+              box-shadow: 0 4px 15px rgba(0, 247, 255, 0.2);
               transition: transform 0.3s ease, box-shadow 0.3s ease;
               height: 100%;
             "
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 25px rgba(0, 247, 255, 0.5)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 247, 255, 0.2)'"
           >
-            <h3 style="color: #00f7ff; margin-bottom: 10px">Python</h3>
-            <p style="color: #b0c4de">
+            <h3 style="color: #00f7ff; margin-bottom: 10px; font-size: 1.3rem">
+              Python
+            </h3>
+            <p style="color: #b0c4de; line-height: 1.6">
               Experienced in backend development with FastAPI.
             </p>
           </div>
+
           <div
-            class="card"
             style="
-              background: #1a1a3d;
-              padding: 20px;
-              border-radius: 10px;
+              background: linear-gradient(145deg, #1a1a3d, #101027);
+              padding: 25px;
+              border-radius: 15px;
+              box-shadow: 0 4px 15px rgba(0, 247, 255, 0.2);
               transition: transform 0.3s ease, box-shadow 0.3s ease;
               height: 100%;
             "
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 25px rgba(0, 247, 255, 0.5)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 247, 255, 0.2)'"
           >
-            <h3 style="color: #00f7ff; margin-bottom: 10px">Database</h3>
-            <p style="color: #b0c4de">
+            <h3 style="color: #00f7ff; margin-bottom: 10px; font-size: 1.3rem">
+              Database
+            </h3>
+            <p style="color: #b0c4de; line-height: 1.6">
               Skilled in MongoDB, MySQL, and designing efficient schemas.
             </p>
           </div>
+
           <div
-            class="card"
             style="
-              background: #1a1a3d;
-              padding: 20px;
-              border-radius: 10px;
+              background: linear-gradient(145deg, #1a1a3d, #101027);
+              padding: 25px;
+              border-radius: 15px;
+              box-shadow: 0 4px 15px rgba(0, 247, 255, 0.2);
               transition: transform 0.3s ease, box-shadow 0.3s ease;
               height: 100%;
             "
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 25px rgba(0, 247, 255, 0.5)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 247, 255, 0.2)'"
           >
-            <h3 style="color: #00f7ff; margin-bottom: 10px">C / C++</h3>
-            <p style="color: #b0c4de">Data Structures and Algorithms</p>
+            <h3 style="color: #00f7ff; margin-bottom: 10px; font-size: 1.3rem">
+              C / C++
+            </h3>
+            <p style="color: #b0c4de; line-height: 1.6">
+              Data Structures and Algorithms
+            </p>
           </div>
         </div>
       </section>
 
       <section
-        class="resume"
         style="
-          padding: 60px 0;
-          margin-bottom: 40px;
-          background: rgba(10, 10, 35, 0.8);
-          border-radius: 15px;
-          box-shadow: 0 0 20px rgba(0, 247, 255, 0.2);
+          padding: 70px 20px;
+          margin-bottom: 50px;
+          background: rgba(10, 10, 35, 0.9);
+          border-radius: 18px;
+          box-shadow: 0 0 30px rgba(0, 247, 255, 0.25);
+          max-width: 1000px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
         "
       >
         <h2
           style="
-            font-size: 2.5em;
+            font-size: 2.8rem;
             color: #00f7ff;
-            text-align: center;
-            margin-bottom: 30px;
-            text-shadow: 0 0 5px #00f7ff;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px #00f7ff, 0 0 25px rgba(0, 247, 255, 0);
+            letter-spacing: 2px;
           "
         >
           Resume
         </h2>
-        <div
-          class="resume-container"
-          style="text-align: center; padding: 0 20px"
-        >
+
+        <div style="padding: 0 20px">
           <a
             href="Manjeet_Full_stack_Dev_Resume.pdf"
             target="_blank"
-            class="resume-btn"
             style="
               display: inline-block;
-              background: #00f7ff;
+              background: linear-gradient(90deg, #00f7ff, #00c6ff);
               color: #0a0a23;
-              padding: 15px 30px;
-              border-radius: 5px;
-              font-size: 1.2em;
+              padding: 16px 40px;
+              border-radius: 50px;
+              font-size: 1.3rem;
+              font-weight: 600;
+              letter-spacing: 1px;
               text-decoration: none;
-              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              text-transform: uppercase;
+              box-shadow: 0 0 15px rgba(0, 247, 255, 0.4),
+                0 0 30px rgba(0, 247, 255, 0.2);
+              transition: all 0.3s ease;
             "
-            >View Resume</a
+            onmouseover="this.style.transform='scale(1.08)'; this.style.boxShadow='0 0 20px rgba(0,247,255,0.6), 0 0 40px rgba(0,247,255,0.1)'"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 15px rgba(0,247,255,0.4), 0 0 30px rgba(0,247,255,0.2)'"
           >
+            📄 View Resume
+          </a>
         </div>
       </section>
 
       <section
-        class="contact"
         style="
-          padding: 60px 0;
-          margin-bottom: 40px;
-          background: rgba(10, 10, 35, 0.8);
-          border-radius: 15px;
-          box-shadow: 0 0 20px rgba(0, 247, 255, 0.2);
+          padding: 60px 20px;
+          margin-bottom: 50px;
+          background: linear-gradient(145deg, #0a0a23, #14143a);
+          border-radius: 14px;
+          text-align: center;
         "
       >
         <h2
           style="
-            font-size: 2.5em;
+            font-size: 2.4em;
             color: #00f7ff;
-            text-align: center;
-            margin-bottom: 30px;
-            text-shadow: 0 0 5px #00f7ff;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+            font-weight: 600;
           "
         >
           Contact Details
         </h2>
+
         <div
-          class="contact-grid"
           style="
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 0 20px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
           "
         >
+          <!-- Email -->
           <a
             href="mailto:manjeetkumar62054@gmail.com"
-            class="links"
-            style="text-decoration: none; color: #b0c4de"
+            style="text-decoration: none; color: inherit"
           >
             <div
-              class="card"
               style="
                 background: #1a1a3d;
-                padding: 20px;
-                border-radius: 10px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                padding: 15px 20px;
+                border-radius: 12px;
+                transition: all 0.3s ease;
                 height: 100%;
               "
+              onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 0 12px rgba(0, 247, 255, 0.4)'"
+              onmouseout="this.style.transform='none';this.style.boxShadow='none'"
             >
-              <h3 style="color: #00f7ff; margin-bottom: 10px">Email</h3>
-              <p style="color: #b0c4de">manjeetkumar62054@gmail.com</p>
+              <h3 style="color: #00f7ff; margin-bottom: 12px; font-size: 1.2em">
+                Email
+              </h3>
+              <p style="color: #b0c4de; font-size: 0.95em">
+                manjeetkumar62054@gmail.com
+              </p>
             </div>
           </a>
+
+          <!-- Phone -->
           <a
             href="tel:+916287773228"
-            class="links"
-            style="text-decoration: none; color: #b0c4de"
+            style="text-decoration: none; color: inherit"
           >
             <div
-              class="card"
               style="
                 background: #1a1a3d;
-                padding: 20px;
-                border-radius: 10px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                padding: 15px 20px;
+                border-radius: 12px;
+                transition: all 0.3s ease;
                 height: 100%;
               "
+              onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 0 12px rgba(0, 247, 255, 0.4)'"
+              onmouseout="this.style.transform='none';this.style.boxShadow='none'"
             >
-              <h3 style="color: #00f7ff; margin-bottom: 10px">Phone</h3>
-              <p style="color: #b0c4de">+91 6287773228</p>
+              <h3 style="color: #00f7ff; margin-bottom: 12px; font-size: 1.2em">
+                Phone
+              </h3>
+              <p style="color: #b0c4de; font-size: 0.95em">+91 6287773228</p>
             </div>
           </a>
+
+          <!-- LinkedIn -->
           <a
             href="https://www.linkedin.com/in/manjeet-kumar4/"
             target="_blank"
-            class="links"
-            style="text-decoration: none; color: #b0c4de"
+            style="text-decoration: none; color: inherit"
           >
             <div
-              class="card"
               style="
                 background: #1a1a3d;
-                padding: 20px;
-                border-radius: 10px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                padding: 15px 20px;
+                border-radius: 12px;
+                transition: all 0.3s ease;
                 height: 100%;
               "
+              onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 0 12px rgba(0, 247, 255, 0.4)'"
+              onmouseout="this.style.transform='none';this.style.boxShadow='none'"
             >
-              <h3 style="color: #00f7ff; margin-bottom: 10px">LinkedIn</h3>
-              <p style="color: #b0c4de">linkedin.com/in/manjeet-kumar4</p>
+              <h3 style="color: #00f7ff; margin-bottom: 12px; font-size: 1.2em">
+                LinkedIn
+              </h3>
+              <p style="color: #b0c4de; font-size: 0.95em">
+                linkedin.com/in/manjeet-kumar4
+              </p>
             </div>
           </a>
+
+          <!-- GitHub -->
           <a
             href="https://github.com/Manjeetmathur"
             target="_blank"
-            class="links"
-            style="text-decoration: none; color: #b0c4de"
+            style="text-decoration: none; color: inherit"
           >
             <div
-              class="card"
               style="
                 background: #1a1a3d;
-                padding: 20px;
-                border-radius: 10px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                padding: 15px 20px;
+                border-radius: 12px;
+                transition: all 0.3s ease;
                 height: 100%;
               "
+              onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 0 12px rgba(0, 247, 255, 0.4)'"
+              onmouseout="this.style.transform='none';this.style.boxShadow='none'"
             >
-              <h3 style="color: #00f7ff; margin-bottom: 10px">GitHub</h3>
-              <p style="color: #b0c4de">github.com/Manjeetmathur</p>
+              <h3 style="color: #00f7ff; margin-bottom: 12px; font-size: 1.2em">
+                GitHub
+              </h3>
+              <p style="color: #b0c4de; font-size: 0.95em">
+                github.com/Manjeetmathur
+              </p>
             </div>
           </a>
+
+          <!-- Instagram -->
           <a
             href="https://www.instagram.com/mathur__manjeet/"
             target="_blank"
-            class="links"
-            style="text-decoration: none; color: #b0c4de"
+            style="text-decoration: none; color: inherit"
           >
             <div
-              class="card"
               style="
                 background: #1a1a3d;
-                padding: 20px;
-                border-radius: 10px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                padding: 15px 20px;
+                border-radius: 12px;
+                transition: all 0.3s ease;
                 height: 100%;
               "
+              onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 0 12px rgba(0, 247, 255, 0.4)'"
+              onmouseout="this.style.transform='none';this.style.boxShadow='none'"
             >
-              <h3 style="color: #00f7ff; margin-bottom: 10px">Instagram</h3>
-              <p style="color: #b0c4de">instagram.com/mathur__manjeet</p>
+              <h3 style="color: #00f7ff; margin-bottom: 12px; font-size: 1.2em">
+                Instagram
+              </h3>
+              <p style="color: #b0c4de; font-size: 0.95em">
+                instagram.com/mathur__manjeet
+              </p>
             </div>
           </a>
         </div>
       </section>
-
       <section
         class="projects"
         style="
@@ -529,7 +653,7 @@
             text-shadow: 0 0 5px #00f7ff;
           "
         >
-          Projects
+          <i class="fas fa-code" style="margin-right: 10px"></i>Projects
         </h2>
         <div
           class="projects-grid"
@@ -540,21 +664,21 @@
             padding: 0 20px;
           "
         >
-          <a
-            href="https://portfolio-builder-manjeetmathurs-projects.vercel.app/profile"
-            target="_blank"
-            class="links"
-            style="text-decoration: none; color: #b0c4de"
+          <div
+            class="card"
+            style="
+              background: #1a1a3d;
+              padding: 20px;
+              border-radius: 10px;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              height: 100%;
+            "
           >
-            <div
-              class="card"
-              style="
-                background: #1a1a3d;
-                padding: 20px;
-                border-radius: 10px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-                height: 100%;
-              "
+            <a
+              href="https://portfolio-builder-manjeetmathurs-projects.vercel.app/profile"
+              target="_blank"
+              class="links"
+              style="text-decoration: none; color: #b0c4de"
             >
               <img
                 src="project1.png"
@@ -568,32 +692,58 @@
                   margin-bottom: 10px;
                 "
               />
-              <h3 style="color: #00f7ff; margin-bottom: 10px">1. YourPort</h3>
-              <p style="color: #b0c4de">
+              <h3
+                style="
+                  color: #00f7ff;
+                  margin-bottom: 10px;
+                  display: flex;
+                  align-items: center;
+                "
+              >
+                <i class="fas fa-code" style="margin-right: 8px"></i>1. YourPort
+              </h3>
+              <p style="color: #b0c4de; font-size: 0.95rem; line-height: 1.5">
                 Built a full-stack web app where users can register, log in, and
-                create customizable portfolios. Integrated light/dark theme
-                templates with sections like skills, blogs, and project uploads.
-                Enables users to edit and manage content from a dedicated
-                dashboard, with profile sharing feature. Implemented secure JWT
-                authentication and responsive UI for all devices.
+                create customizable portfolios...
               </p>
-            </div>
-          </a>
-          <a
-            href="https://ukart.vercel.app/"
-            target="_blank"
-            class="links"
-            style="text-decoration: none; color: #b0c4de"
-          >
-            <div
-              class="card"
+            </a>
+
+            <button
+              class="read-more-btn"
               style="
-                background: #1a1a3d;
-                padding: 20px;
-                border-radius: 10px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-                height: 100%;
+                background: #00f7ff;
+                color: #1a1a3d;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1rem;
+                margin-top: 10px;
+                transition: background 0.3s ease;
               "
+              onmouseover="this.style.background='#b0c4de'"
+              onmouseout="this.style.background='#00f7ff'"
+              onclick="openModal('YourPort', 'Built a full-stack web app where users can register, log in, and create customizable portfolios. Integrated light/dark theme templates with sections like skills, blogs, and project uploads. Enables users to edit and manage content from a dedicated dashboard, with profile sharing feature. Implemented secure JWT authentication and responsive UI for all devices.')"
+            >
+              Read More
+            </button>
+          </div>
+
+          <div
+            class="card"
+            style="
+              background: #1a1a3d;
+              padding: 20px;
+              border-radius: 10px;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              height: 100%;
+            "
+          >
+            <a
+              href="https://ukart.vercel.app/"
+              target="_blank"
+              class="links"
+              style="text-decoration: none; color: #b0c4de"
             >
               <img
                 src="project2.jpg"
@@ -607,37 +757,59 @@
                   margin-bottom: 10px;
                 "
               />
-              <h3 style="color: #00f7ff; margin-bottom: 10px">
-                2. Order Your Lovely Needs
+              <h3
+                style="
+                  color: #00f7ff;
+                  margin-bottom: 10px;
+                  display: flex;
+                  align-items: center;
+                "
+              >
+                <i class="fas fa-code" style="margin-right: 8px"></i>2. Order
+                Your Lovely Needs
               </h3>
-              <p style="color: #b0c4de">
+              <p style="color: #b0c4de; font-size: 0.95rem; line-height: 1.5">
                 Developed and launched Ukart, a full-featured eCommerce platform
-                supporting shopping, cart, and secure checkout. Built responsive
-                UI using React.js, Tailwind CSS, and RESTful APIs to ensure
-                smooth user experience. Implemented robust product management
-                system including create/edit/delete features for admins and
-                category-wise filtering for users. Also added user
-                authentication and admin controls. Connected backend using
-                Node.js, Express, and MongoDB for scalable data management and
-                real-time updates.
+                supporting shopping, cart, and secure checkout...
               </p>
-            </div>
-          </a>
-          <a
-            href="https://ecm-art-frontend.vercel.app/"
-            target="_blank"
-            class="links"
-            style="text-decoration: none; color: #b0c4de"
-          >
-            <div
-              class="card"
+            </a>
+
+            <button
+              class="read-more-btn"
               style="
-                background: #1a1a3d;
-                padding: 20px;
-                border-radius: 10px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-                height: 100%;
+                background: #00f7ff;
+                color: #1a1a3d;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1rem;
+                margin-top: 10px;
+                transition: background 0.3s ease;
               "
+              onmouseover="this.style.background='#b0c4de'"
+              onmouseout="this.style.background='#00f7ff'"
+              onclick="openModal('Order Your Lovely Needs', 'Developed and launched Ukart, a full-featured eCommerce platform supporting shopping, cart, and secure checkout. Built responsive UI using React.js, Tailwind CSS, and RESTful APIs to ensure smooth user experience. Implemented robust product management system including create/edit/delete features for admins and category-wise filtering for users. Also added user authentication and admin controls. Connected backend using Node.js, Express, and MongoDB for scalable data management and real-time updates.')"
+            >
+              Read More
+            </button>
+          </div>
+
+          <div
+            class="card"
+            style="
+              background: #1a1a3d;
+              padding: 20px;
+              border-radius: 10px;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              height: 100%;
+            "
+          >
+            <a
+              href="https://ecm-art-frontend.vercel.app/"
+              target="_blank"
+              class="links"
+              style="text-decoration: none; color: #b0c4de"
             >
               <img
                 src="project3.jpg"
@@ -651,32 +823,59 @@
                   margin-bottom: 10px;
                 "
               />
-              <h3 style="color: #00f7ff; margin-bottom: 10px">
-                3. Order Your Favorite Gifts and Artwork
+              <h3
+                style="
+                  color: #00f7ff;
+                  margin-bottom: 10px;
+                  display: flex;
+                  align-items: center;
+                "
+              >
+                <i class="fas fa-code" style="margin-right: 8px"></i>3. Order
+                Your Favorite Gifts and Artwork
               </h3>
-              <p style="color: #b0c4de">
+              <p style="color: #b0c4de; font-size: 0.95rem; line-height: 1.5">
                 Developed and launched Ukart, a full-featured eCommerce platform
-                supporting shopping, cart, and secure checkout. Built responsive
-                UI using React.js, Tailwind CSS, and RESTful APIs to ensure
-                smooth user experience.
+                supporting shopping, cart, and secure checkout...
               </p>
-            </div>
-          </a>
-          <a
-            href="https://puja-chanda.vercel.app/"
-            target="_blank"
-            class="links"
-            style="text-decoration: none; color: #b0c4de"
-          >
-            <div
-              class="card"
+            </a>
+
+            <button
+              class="read-more-btn"
               style="
-                background: #1a1a3d;
-                padding: 20px;
-                border-radius: 10px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-                height: 100%;
+                background: #00f7ff;
+                color: #1a1a3d;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1rem;
+                margin-top: 10px;
+                transition: background 0.3s ease;
               "
+              onmouseover="this.style.background='#b0c4de'"
+              onmouseout="this.style.background='#00f7ff'"
+              onclick="openModal('Order Your Favorite Gifts and Artwork', 'Developed and launched Ukart, a full-featured eCommerce platform supporting shopping, cart, and secure checkout. Built responsive UI using React.js, Tailwind CSS, and RESTful APIs to ensure smooth user experience.')"
+            >
+              Read More
+            </button>
+          </div>
+
+          <div
+            class="card"
+            style="
+              background: #1a1a3d;
+              padding: 20px;
+              border-radius: 10px;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              height: 100%;
+            "
+          >
+            <a
+              href="https://puja-chanda.vercel.app/"
+              target="_blank"
+              class="links"
+              style="text-decoration: none; color: #b0c4de"
             >
               <img
                 src="project4.jpg"
@@ -690,20 +889,175 @@
                   margin-bottom: 10px;
                 "
               />
-              <h3 style="color: #00f7ff; margin-bottom: 10px">
-                4. Event Money Manager
+              <h3
+                style="
+                  color: #00f7ff;
+                  margin-bottom: 10px;
+                  display: flex;
+                  align-items: center;
+                "
+              >
+                <i class="fas fa-code" style="margin-right: 8px"></i>4. Event
+                Money Manager
               </h3>
-              <p style="color: #b0c4de">
+              <p style="color: #b0c4de; font-size: 0.95rem; line-height: 1.5">
                 Easily manage and track contributions (chanda/donations) from
-                devotees for various puja events and community celebrations.
-                Donor Database with History: Maintain a detailed record of past
-                donors, their contributions, and contact information for future
-                reference and outreach.
+                devotees for various puja events...
               </p>
-            </div>
-          </a>
+            </a>
+
+            <button
+              class="read-more-btn"
+              style="
+                background: #00f7ff;
+                color: #1a1a3d;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1rem;
+                margin-top: 10px;
+                transition: background 0.3s ease;
+              "
+              onmouseover="this.style.background='#b0c4de'"
+              onmouseout="this.style.background='#00f7ff'"
+              onclick="openModal('Event Money Manager', 'Easily manage and track contributions (chanda/donations) from devotees for various puja events and community celebrations. Donor Database with History: Maintain a detailed record of past donors, their contributions, and contact information for future reference and outreach.')"
+            >
+              Read More
+            </button>
+          </div>
+          <div
+            class="card"
+            style="
+              background: #1a1a3d;
+              padding: 20px;
+              border-radius: 10px;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              height: 100%;
+            "
+          >
+            <a
+              href="https://studyhubstore.vercel.app/dashboard"
+              target="_blank"
+              class="links"
+              style="text-decoration: none; color: #b0c4de"
+            >
+              <img
+                src="study.png"
+                alt="Project 4"
+                class="project-img"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  border-radius: 10px;
+                  margin-bottom: 10px;
+                "
+              />
+              <h3
+                style="
+                  color: #00f7ff;
+                  margin-bottom: 10px;
+                  display: flex;
+                  align-items: center;
+                "
+              >
+                <i class="fas fa-code" style="margin-right: 8px"></i>5. Study
+                hub & Store
+              </h3>
+              <p style="color: #b0c4de; font-size: 0.95rem; line-height: 1.5">
+                Easily manage and track contributions (chanda/donations) from
+                devotees for various puja events...
+              </p>
+            </a>
+
+            <button
+              class="read-more-btn"
+              style="
+                background: #00f7ff;
+                color: #1a1a3d;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1rem;
+                margin-top: 10px;
+                transition: background 0.3s ease;
+              "
+              onmouseover="this.style.background='#b0c4de'"
+              onmouseout="this.style.background='#00f7ff'"
+              onclick="openModal('Study hub & Store', '📖 Project Description – Study Hub Store Study Hub Store is an all-in-one collaborative learning platform designed for students. It combines productivity, resource sharing, and an online study marketplace into a single seamless experience.🔹 Key Features:👥 Group Creation – Students can create groups and invite friends via Gmail, making it easy to collaborate with classmates.📑 Notes Sharing – Upload and share notes, documents, and study resources with group members in real time.✅ To-Do & Task Management – Stay organized by creating personal or group tasks, deadlines, and reminders.🛒 Study Material Store – Access a built-in store with curated study materials, books, and resources to support learning needs.🔐 Authentication – Secure login with email, password, or Google integration.Study Hub Store empowers students to collaborate, organize, and access learning resources all in one place — making studying smarter and more connected.')"
+            >
+              Read More
+            </button>
+          </div>
         </div>
       </section>
+
+      <!-- Modal for project details -->
+      <div
+        id="projectModal"
+        class="modal"
+        style="
+          display: none;
+          position: fixed;
+          z-index: 1000;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+          overflow: auto;
+        "
+      >
+        <div
+          class="modal-content"
+          style="
+            background: #1a1a3d;
+            margin: 10% auto;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 247, 255, 0.3);
+            position: relative;
+            color: #b0c4de;
+          "
+        >
+          <span
+            class="close-btn"
+            style="
+              position: absolute;
+              top: 10px;
+              right: 20px;
+              color: #00f7ff;
+              font-size: 1.5rem;
+              cursor: pointer;
+              transition: color 0.3s ease;
+            "
+            onmouseover="this.style.color='#b0c4de'"
+            onmouseout="this.style.color='#00f7ff'"
+            onclick="closeModal()"
+          >
+            &times;
+          </span>
+          <h3
+            id="modalTitle"
+            style="
+              color: #00f7ff;
+              font-size: 1.8rem;
+              margin-bottom: 15px;
+              display: flex;
+              align-items: center;
+            "
+          >
+            <i class="fas fa-code" style="margin-right: 8px"></i>Project Title
+          </h3>
+          <p
+            id="modalDescription"
+            style="font-size: 1rem; line-height: 1.6"
+          ></p>
+        </div>
+      </div>
 
       <section
         class="mail"
